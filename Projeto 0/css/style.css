@@ -201,3 +201,36 @@ a:hover{
 .funcao{
 	font-weight: 600;
 }
+
+.port2{
+
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	margin: 3rem 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	background-image: url(../images/leftcred.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(0.5);
+	color: #fff;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+.port2:hover{
+	filter: unset;
+}
+
+.port2:hover > .card::before{
+
+	height: 200px;
+	width: 200px;
+	opacity: 1;
+}
