@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body{
+
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	overflow-x: hidden;
+
+}
+
+.header-container{
+
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	background-image: url(../images/imagem-luis.jpeg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 0 112px;
+	position: relative;
+}
+
+
+h1{
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 1.8;
+	
+}
+
+h2{
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	/* padding-left: 10px; */
+	
+}
+
+.social{
+	margin-top: 1rem;
+	display: flex;
+}
+
+.social a{
+
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem 4rem;
+	border: 1px solid #fff;
+	min-width: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a:hover{
+
+	background-color: #fff;
+	border-color: black;
+	color: black;
+
+}
+
+.container{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 5rem 0;
+}
+
+.container h2{
+
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 1.8;
+	text-transform: uppercase;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+
+.port-container{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 90%;
+	padding: 4rem 0;
+}
+
+.port{
+
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	margin: 3rem 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	background-image: url(../images/imagem-luis.jpeg);
+	transform: scaleX(-1);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(0.5);
+	color: #fff;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+.port h2{
+	transform: scaleX(-1);
+	color: #fff;
+}
+
+.card-text{
+	width: 40%;
+	color: black;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	
+}
+
+.card{
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.card::before{
+
+	content: '';
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: block;
+	border: 1px solid black;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+
+.card h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin: 0;
+	transition: 0.5s ease-in-out;
+}
+
+.port:hover{
+	filter: unset;
+}
+
+.port:hover > .card::before{
+
+	height: 200px;
+	width: 200px;
+	opacity: 1;
+}
+
+.footer{
+	width: 100%;
+	height: 100px;
+	color:#fff;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.realizo{
+
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.funcao{
+	font-weight: 600;
+}
